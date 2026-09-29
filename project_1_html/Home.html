@@ -4,87 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        text-align: center;
-        font-family: Georgia, sans-serif;
-        margin-top: 12px;
-        background-color: #7ddaee;
 
-    }
+<body>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="page_2.html">PNG Tuber</a>
+    </nav>
+    <header>
 
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-</style>
-    <body>
-        <h1 style="font-family: Georgia;">WATASHI NO YAPPINGU</h1>
-        <h4 style="text-align: right; font-family: Sans-Serif;">16 September 2026</h4>
-        <hr style="border: 1px solid black;">
-            <p style="text-align: left;">Saya mempunyai beberapa hobi yaitu : </p>
-            <ul style="text-align: left;">
-                <li>Bermain game, apapun ituu.</li>
-                <li>Suka bermain semua jenis alat musik.</li>
-                <li>Streaming sebagai PNG Tuber.</li>
-                </ul>
-            <p style="text-align: center;">Nahhh kenapa aku memiliki hobi seperti itu, ya karena emang itu asik aja sih nihh misal <br>
-            kita lagi stress nih karean kuliah banyak tugas banyak kegiatan oraganisasi otomatis kita<br>
-        memerlukan pengeluaran kann nahh contoh nya adlah bermain game atau bermain<br>
-    musik dan bernyanyi apa yang kita suka, nah kalau png tuber tuh cuma sebagai side job <br>
-yang dimana saya menjual beberapa item dalam game kepada orang oang yang minat<br>
-kepada orang orang yang menonton live saya.</p>
+        <h1>WATASHI NO YAPPINGU</h1>
 
-<hr style="border: 1px solid black">
-    <h3>STUDYING</h3>
-        <P style="text-align: left;">Saya mengambil beberapa mata kuliah yaitu :</P>
-            <h2>Daftar Mata Kuliah</h2>
-            <table style="width: 100%; border-collapse: collapse; text-align: left;">
-                <tr>
-                    <th style="border: 1px solid black; padding: 8px;">No</th>
-                    <th style="border: 1px solid black; padding: 8px;">Mata Kuliah</th>
-                    <th style="border: 1px solid black; padding: 8px;">Dosen</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black; padding: 8px;">1</td>
-                    <td style="border: 1px solid black; padding: 8px;">Pemrograman Web</td>
-                    <td style="border: 1px solid black; padding: 8px;">Bapak Bagaskara</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black; padding: 8px;">2</td>
-                    <td style="border: 1px solid black; padding: 8px;">Mesin Learning</td>
-                    <td style="border: 1px solid black; padding: 8px;">Romo Hari</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black; padding: 8px;">3</td>
-                    <td style="border: 1px solid black; padding: 8px;">Metode Numerik</td>
-                    <td style="border: 1px solid black; padding: 8px;">Bapak Eko Hari</td>
+        <h4>16 September 2026</h4>
 
-                </tr>
-            </table>
-        <br>
-    <hr style="border: 1px solid black">
-<br>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>MY HOBBIES</h2>
+            <p class="left-text">
+                Saya mempunyai beberapa hobi yaitu:
+            </p>
+            <ul class="hobby-list">
+                <li>
+                    Bermain game, apapun ituu.
+                </li>
+                <li>
+                    Suka bermain semua jenis alat musik.
+                </li>
+                <li>
+                    Streaming sebagai PNG Tuber.
+                </li>
+            </ul>
 
-    <h3>MY FIRST CHARACTER</h3>
-        <div style="text-align: center;">  
-            <img src="../project_1_html/image/first_Char.png" alt="First Character" style="width: 250px; height: auto;">
+            <div class="text-card">
+
+                <p>
+                    Nahhh kenapa aku memiliki hobi seperti itu, ya karena emang
+                    itu asik aja sih. Nihh misal kita lagi stress nih karena
+                    kuliah banyak tugas, banyak kegiatan organisasi otomatis kita
+                    memerlukan pengeluaran kann.
+                </p>
+
+                <p>
+                    Nahh contohnya adalah bermain game atau bermain musik dan
+                    bernyanyi apa yang kita suka. Nah kalau PNG Tuber tuh cuma
+                    sebagai side job yang dimana saya menjual beberapa item dalam
+                    game kepada orang-orang yang minat kepada orang-orang yang
+                    menonton live saya.
+                </p>
+            </div>
+
+        </section>
+        <section class="content-section">
+            <h2>STUDYING</h2>
+            <p class="left-text">
+                Saya mengambil beberapa mata kuliah yaitu:
+            </p>
+            <h3>Daftar Mata Kuliah</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Mata Kuliah</th>
+                            <th>Dosen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pemrograman Web</td>
+                            <td>Bapak Bagaskara</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Machine Learning</td>
+                            <td>Romo Hari</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Metode Numerik</td>
+                            <td>Bapak Eko Hari</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section character-intro">
+            <h2>MY FIRST CHARACTER</h2>
+            <div class="first-character">
+                <img 
+                    src="../project_1_html/image/first_Char.png"
+                    alt="First Character">
+            </div>
+            <div class="text-card">
+                <p>
+                    Jadi ini adalah character pertama yang saya gunakan untuk
+                    live streaming dan menjual beberapa item.
+                </p>
+                <p>
+                    Lalu setelah beberapa bulan saya menggunakan character ini
+                    saya mulai mencari tahu tentang character seperti apa sih
+                    yang akan menarik pelanggan lebih banyak dan terciptalah
+                    versi chibi dari character ini.
+                </p>
+                <p>
+                    Character chibi tersebut masih saya gunakan sampai sekarang
+                    dan menghasilkan uang yang lumayan.
+                </p>
+            </div>
+        </section>
+        <div class="button-container">
+            <a href="page_2.html" class="back-button">
+                Next Page
+            </a>
         </div>
-            <p style="text-align: center;">Jadi ini adalah character pertama yang saya gunakan untuk live streaming dan menjual beberapa item,<br>
-            lalu setelah beberapa bulan saya menggunakan character ini saya mulai mencari tahu tentang character <br>
-            seperti apa sih yang akan menarik pelanggan  lebih banyak dan terciptalah versi chibi dari character ini <br>
-            yang masih saya gunakan sampai sekarang dan menghasilkan uang yang lumayan.</p>
-
-<br>
-<hr style="border: 1px solid black">
-<br>
-    <a href="page_2.html"><button>Next Page</button></a>
-    </body>
+    </main>
+    <footer>
+        <p>
+            © 2026 Watashi No Yappingu
+        </p>
+    </footer>
+</body>
 </html>
