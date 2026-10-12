@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img class="photo" src="foto_1.jpeg" alt="Foto mahasiswa"
+           onerror="this.style.display='none'">
+      <div>
+        <h1>Tugas 4  JavaScript</h1>
+        <p><strong>Nama:</strong> Novarian Desta Hermawan</p>
+        <p><strong>NIM:</strong> 255314123</p>
+        <p>Praktikum Pemrograman Web</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <span class="step">STEP ONEE</span>
+      <h2>Data diri dan jumlah pilihan</h2>
+      <p class="hint">Masukkan nama dan jumlah pilihan yang mau dibuat</p>
+      <form id="formData" novalidate>
+        <div class="field">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" placeholder="Masukkan nama lengkap" maxlength="100">
+          <div class="error" id="errorNama"></div>
+        </div>
+        <div class="field">
+          <label for="jumlah">Jumlah pilihan (1–20)</label>
+          <input type="number" id="jumlah" min="1" max="20" step="1" placeholder="Contoh: 5">
+          <div class="error" id="errorJumlah"></div>
+        </div>
+        <button type="submit">OK</button>
+      </form>
+    </section>
+
+    <section class="card hidden" id="bagianPilihan">
+      <span class="step">STEP TWOO</span>
+      <h2>Masukkan teks pilihan</h2>
+      <p class="hint">Isi semua teks pilihan.</p>
+      <form id="formPilihan">
+        <div id="daftarInputPilihan"></div>
+        <div class="error" id="errorPilihan"></div>
+        <button type="submit">OK</button>
+        <button type="button" class="secondary" id="kembaliData">Kembali</button>
+      </form>
+    </section>
+
+    <section class="card hidden" id="bagianPilih">
+      <span class="step">STEP THREE</span>
+      <h2>Pilih salah satu</h2>
+      <p class="hint">Tentukan cara memilih.</p>
+      <div class="field">
+        <label for="modePilihan">Bentuk pilihan</label>
+        <select id="modePilihan">
+          <option value="radio">Radio button</option>
+          <option value="dropdown">Drop down</option>
+        </select>
+      </div>
+      <form id="formPilih">
+        <div id="kontrolPilihan"></div>
+        <div class="error" id="errorPilih"></div>
+        <button type="submit">OK</button>
+        <button type="button" class="secondary" id="kembaliPilihan">Kembali</button>
+      </form>
+    </section>
+
+    <section class="card hidden" id="bagianEmail">
+      <span class="step">STEP FOURR</span>
+      <h2>Masukkan email</h2>
+      <p class="hint">Maukkan format email, contoh nama@gmail.com.</p>
+      <form id="formEmail" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="nama@domain.com" maxlength="254">
+          <div class="error" id="errorEmail"></div>
+        </div>
+        <button type="submit">OK</button>
+        <button type="button" class="secondary" id="kembaliPilih">Kembali</button>
+      </form>
+    </section>
+
+    <section class="card hidden" id="bagianHasil">
+      <span class="step">HASIL AKHIR</span>
+      <h2>Ringkasan pilihan</h2>
+      <div class="success" id="hasil"></div>
+      <p class="result-actions"><button type="button" id="ulang">Mulai lagi</button></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
